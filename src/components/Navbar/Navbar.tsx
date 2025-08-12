@@ -17,14 +17,28 @@ const Navbar = () => {
                 'is-active': location.pathname === '/',
               })}
             >
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                className={classNames({
+                  'is-active': location.pathname === '/',
+                })}
+              >
+                Home
+              </Link>
             </li>
             <li
               className={classNames('navbar-item', {
                 'is-active': location.pathname.startsWith('/tabs'),
               })}
             >
-              <Link to="/tabs">Tabs</Link>
+              <Link
+                to="/tabs"
+                className={classNames({
+                  'is-active': location.pathname.startsWith('/tabs'),
+                })}
+              >
+                Tabs
+              </Link>
             </li>
           </ul>
         </div>
